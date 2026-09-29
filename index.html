@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sabores da Mantiqueira — queijos artesanais e produtos selecionados de alta qualidade.">
+  <title>Sabores da Mantiqueira | Queijos e Delícias</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="container nav">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark">SM</span>
+      <span><strong>Sabores da Mantiqueira</strong><small>Queijos & produtos selecionados</small></span>
+    </a>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#kits">Kits</a>
+      <a href="#sobre">Nossa proposta</a><a href="#produtores">Produtores</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="cart-btn" onclick="openCart()">🛒 <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">SELEÇÃO ARTESANAL • MANTIQUEIRA</p>
+      <h1>O melhor da Mantiqueira na sua mesa.</h1>
+      <p class="hero-text">Queijos artesanais, doces, cafés e produtos especiais escolhidos pela qualidade, origem e sabor.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#produtos">Ver produtos</a>
+        <a class="btn outline" href="#kits">Conhecer os kits</a>
+      </div>
+      <div class="trust"><span>✓ Produtos selecionados</span><span>✓ Atendimento personalizado</span><span>✓ Pedido fácil pelo WhatsApp</span></div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-art">🧀</div>
+      <div class="hero-card-text"><span>DESTAQUE</span><strong>Queijos de personalidade</strong><p>Da meia cura aos maturados especiais.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="strip">
+  <div class="container strip-grid">
+    <div>🧀 <strong>Queijos artesanais</strong><span>Seleção especial</span></div>
+    <div>🍯 <strong>Doces & geleias</strong><span>Sabores da região</span></div>
+    <div>☕ <strong>Cafés especiais</strong><span>Para acompanhar</span></div>
+    <div>🎁 <strong>Kits presente</strong><span>Combinações especiais</span></div>
+  </div>
+</section>
+
+<section id="produtos" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div><p class="eyebrow">NOSSO CATÁLOGO</p><h2>Produtos selecionados</h2></div>
+      <div class="filters">
+        <button class="filter active" data-cat="Todos">Todos</button>
+        <button class="filter" data-cat="Queijos">Queijos</button>
+        <button class="filter" data-cat="Doces">Doces</button>
+        <button class="filter" data-cat="Cafés">Cafés</button>
+        <button class="filter" data-cat="Kits">Kits</button>
+      </div>
+    </div>
+    <div id="products" class="products"></div>
+  </div>
+</section>
+
+<section id="kits" class="section alt">
+  <div class="container feature">
+    <div>
+      <p class="eyebrow">PARA PRESENTEAR</p>
+      <h2>Kits Sabores da Mantiqueira</h2>
+      <p>Monte uma experiência com queijo, doce, café e outros produtos selecionados. Ideal para presentes, empresas e ocasiões especiais.</p>
+      <a class="btn primary" href="#produtos">Montar meu pedido</a>
+    </div>
+    <div class="kit-box"><span>🎁</span><strong>Seu kit, do seu jeito</strong><small>Escolha os produtos e envie o pedido pelo WhatsApp.</small></div>
+  </div>
+</section>
+
+<section id="sobre" class="section">
+  <div class="container about">
+    <div>
+      <p class="eyebrow">NOSSA PROPOSTA</p>
+      <h2>Qualidade começa na escolha.</h2>
+    </div>
+    <div>
+      <p>O Sabores da Mantiqueira nasceu com uma ideia simples: aproximar você de produtos que tenham história, origem e qualidade.</p>
+      <p>Trabalhamos para selecionar produtores e produtos diferenciados da Mantiqueira, valorizando o trabalho artesanal e oferecendo atendimento próximo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section price-info">
+  <div class="container about">
+    <div><p class="eyebrow">COMERCIALIZAÇÃO</p><h2>Preço justo e transparente.</h2></div>
+    <div>
+      <p>Os preços exibidos no catálogo serão definidos com base no custo de aquisição, embalagem, perdas, logística e margem da Sabores da Mantiqueira.</p>
+      <p>Enquanto as condições de atacado dos produtores estão sendo negociadas, os produtos aparecem como <strong>“preço de venda a definir”</strong>. Assim evitamos publicar como seu preço final um valor de varejo de outro fornecedor.</p>
+    </div>
+  </div>
+</section>
+
+<section id="produtores" class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <div><p class="eyebrow">DA ORIGEM À SUA MESA</p><h2>Produtores selecionados</h2></div>
+    </div>
+    <div class="producer-grid">
+      <article class="producer-card"><span>⛰️</span><h3>Queijaria Velho Pitta</h3><p>Itamonte/MG • linha autoral de queijos Mantiqueira de Minas.</p></article>
+      <article class="producer-card"><span>🐄</span><h3>Queijaria Piemonte</h3><p>Pouso Alto/MG • produção artesanal com leite fresco da própria fazenda.</p></article>
+      <article class="producer-card"><span>🧀</span><h3>Queijos Imperial Mantiqueira</h3><p>Itamonte/MG • queijos artesanais e opções para revenda.</p></article>
+    </div>
+    <p class="source-note">A presença de um produtor no catálogo não significa que exista autorização de revenda. A disponibilidade, condições comerciais e autorização de uso de marca/imagens devem ser confirmadas antes da publicação definitiva.</p>
+  </div>
+</section>
+
+<section id="contato" class="contact">
+  <div class="container contact-inner">
+    <div><p class="eyebrow">FALE CONOSCO</p><h2>Quer fazer um pedido?</h2><p>Escolha seus produtos, confira o carrinho e envie seu pedido pelo WhatsApp.</p></div>
+    <button class="btn light" onclick="openCart()">🛒 Ver carrinho e pedir</button>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>Sabores da Mantiqueira</strong><p>Queijos e produtos selecionados.</p></div>
+    <div><p>Atendimento pelo WhatsApp</p><small>Site independente em fase de implantação.</small></div>
+  </div>
+  <div class="copyright">© <span id="year"></span> Sabores da Mantiqueira. Todos os direitos reservados.</div>
+</footer>
+
+<div id="cartModal" class="modal hidden">
+  <div class="modal-box">
+    <button class="close" onclick="closeCart()">×</button>
+    <h2>Seu pedido</h2>
+    <div id="cartItems"></div>
+    <div class="total"><span>Total estimado</span><strong id="cartTotal">R$ 0,00</strong></div>
+    <p class="note">Os preços podem ser alterados conforme peso, disponibilidade e fornecedor. O pedido será confirmado pelo WhatsApp.</p>
+    <button class="btn primary full" onclick="sendWhatsApp()">Enviar pedido pelo WhatsApp</button>
+    <button class="clear" onclick="clearCart()">Limpar carrinho</button>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
